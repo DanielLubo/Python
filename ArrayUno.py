@@ -1,4 +1,4 @@
-notas = [0, 3.0, 4.2, 5]
+notas = [0, 3.0, 4.2, 5, 4.2, 4.2]
 
 print("Lista de notas:", notas)
 
@@ -45,7 +45,7 @@ print(f"La suma eficiente es: {sum(notas)}")
 print(f"El promedio eficiente es: {sum(notas) / len(notas)}")
 
 
-
+# Encontrar nota mayor
 print("Nota mayor")
 nota_mayor = 0
 for i in range (len(notas)):
@@ -53,3 +53,21 @@ for i in range (len(notas)):
         nota_mayor = notas[i]
 
 print(f"La nota mayor es: {nota_mayor}")
+
+
+# Buscar un coso en el array
+busqueda = 4.2
+if busqueda in notas:
+    print(f"La nota si se encuentra en el array")
+else:
+    print("La nota no esta en el array")
+
+print(notas)
+# Contador
+nota = 4.2
+contador = 0
+for i in range (len(notas)):
+    if nota == notas[i]:
+        contador += 1
+
+print(f"La nota {nota}, se repite {contador} veces")
